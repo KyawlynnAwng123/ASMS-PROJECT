@@ -1,0 +1,399 @@
+{% extends "main.html" %}
+{% block title %}/Add School{% endblock title %}
+
+{% block content %}
+<main id="main" class="main">
+      <div class="pagetitle">
+        <h1>
+          List Of Schools &nbsp;
+          <i class="bi bi-house"></i>
+          <!--   <i class="bi bi-house"></i>
+                <i class="bi bi-house"></i>   -->
+        </h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">Pages</li>
+            <li class="breadcrumb-item active">Schools</li>
+          </ol>
+
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Add School</button>
+        </nav>
+      </div>
+
+    <!-- start modal add school -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Add School</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3 form-floating">
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Township...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="mb-3 form-floating">
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">School...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Reset</button>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+     <!-- end modal add school -->
+
+      <!-- End Page Title -->
+      <section class="section">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Schools&nbsp;|&nbsp;SITTWAY&nbsp;
+                  <i class="bi bi-train-front"></i>
+                </h5>
+                <!-- Table with stripped rows -->
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">NO</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Position</th>
+                      <th scope="col">Age</th>
+                      <th scope="col">Start Date</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Brandon Jacob</td>
+                      <td>Designer</td>
+                      <td>28</td>
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Bridie Kessler</td>
+                      <td>Developer</td>
+                      <td>35</td>
+                      <td>2014-12-05</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Ashleigh Langosh</td>
+                      <td>Finance</td>
+                      <td>45</td>
+                      <td>2011-08-12</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Angus Grady</td>
+                      <td>HR</td>
+                      <td>34</td>
+                      <td>2012-06-11</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Raheem Lehner</td>
+                      <td>Dynamic Division Officer</td>
+                      <td>47</td>
+                      <td>2011-04-19</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-grid gap-2">
+                  <a href="all_school.html" class="btn btn-success">View All Schools</a>
+                </div>
+                <!-- End Table with stripped rows -->
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Schools&nbsp;|&nbsp;MROUK OO&nbsp;
+                  <i class="bi bi-train-front"></i>
+                </h5>
+                <!-- Table with stripped rows -->
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">NO</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Position</th>
+                      <th scope="col">Age</th>
+                      <th scope="col">Start Date</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Brandon Jacob</td>
+                      <td>Designer</td>
+                      <td>28</td>
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Bridie Kessler</td>
+                      <td>Developer</td>
+                      <td>35</td>
+                      <td>2014-12-05</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Ashleigh Langosh</td>
+                      <td>Finance</td>
+                      <td>45</td>
+                      <td>2011-08-12</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Angus Grady</td>
+                      <td>HR</td>
+                      <td>34</td>
+                      <td>2012-06-11</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Raheem Lehner</td>
+                      <td>Dynamic Division Officer</td>
+                      <td>47</td>
+                      <td>2011-04-19</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-grid gap-2">
+                  <a href="all_school.html" class="btn btn-success">View All Schools</a>
+                </div>
+                <!-- End Table with stripped rows -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Schools&nbsp;|&nbsp;RATHEE DAUNG&nbsp;
+                  <i class="bi bi-train-front"></i>
+                </h5>
+                <!-- Table with stripped rows -->
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">NO</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Position</th>
+                      <th scope="col">Age</th>
+                      <th scope="col">Start Date</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Brandon Jacob</td>
+                      <td>Designer</td>
+                      <td>28</td>
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Bridie Kessler</td>
+                      <td>Developer</td>
+                      <td>35</td>
+                      <td>2014-12-05</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Ashleigh Langosh</td>
+                      <td>Finance</td>
+                      <td>45</td>
+                      <td>2011-08-12</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Angus Grady</td>
+                      <td>HR</td>
+                      <td>34</td>
+                      <td>2012-06-11</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Raheem Lehner</td>
+                      <td>Dynamic Division Officer</td>
+                      <td>47</td>
+                      <td>2011-04-19</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-grid gap-2">
+                  <a href="all_school.html" class="btn btn-success">View All Schools</a>
+                </div>
+                <!-- End Table with stripped rows -->
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Schools&nbsp;|&nbsp;MIN BRAR&nbsp;
+                  <i class="bi bi-train-front"></i>
+                </h5>
+                <!-- Table with stripped rows -->
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">NO</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Position</th>
+                      <th scope="col">Age</th>
+                      <th scope="col">Start Date</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Brandon Jacob</td>
+                      <td>Designer</td>
+                      <td>28</td>
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Bridie Kessler</td>
+                      <td>Developer</td>
+                      <td>35</td>
+                      <td>2014-12-05</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Ashleigh Langosh</td>
+                      <td>Finance</td>
+                      <td>45</td>
+                      <td>2011-08-12</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Angus Grady</td>
+                      <td>HR</td>
+                      <td>34</td>
+                      <td>2012-06-11</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Raheem Lehner</td>
+                      <td>Dynamic Division Officer</td>
+                      <td>47</td>
+                      <td>2011-04-19</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-grid gap-2">
+                  <a href="all_school.html" class="btn btn-success">View All Schools</a>
+                </div>
+                <!-- End Table with stripped rows -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+{% endblock content %}

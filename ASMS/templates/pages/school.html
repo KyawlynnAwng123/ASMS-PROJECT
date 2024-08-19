@@ -1,0 +1,412 @@
+{% extends "main.html" %}
+{% block title %}
+  /Schools
+{% endblock title %}
+{% block content %}
+<main id="main" class="main">
+      <div class="pagetitle">
+        <h1>
+          lIST OF SCHOOLS &nbsp;
+          <i class="bi bi-house"></i>
+          <i class="bi bi-house"></i>
+          <i class="bi bi-house"></i>
+        </h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="{% url "indexpage" %}">Home</a>
+            </li>
+            <li class="breadcrumb-item">Pages</li>
+            <li class="breadcrumb-item active">Schools</li>
+          </ol>
+          <a href="{% url "add_school_page" %}">
+            <button type="button" class="btn btn-secondary">Add School</button>
+          </a>
+        </nav>
+      </div>
+      <!-- End Page Title -->
+      <section class="section">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Schools&nbsp;|&nbsp;SITTWAY&nbsp;
+                  <i class="bi bi-train-front"></i>
+                </h5>
+                <!-- Table with stripped rows -->
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">NO</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Teachers</th>
+                      
+                      <th scope="col">Start Date</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-grid gap-2">
+                  <a href="{% url 'all_schoolpage' %}" class="btn btn-success"
+                    >View All Schools</a
+                  >
+                </div>
+                <!-- End Table with stripped rows -->
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Schools&nbsp;|&nbsp;MROUK OO&nbsp;
+                  <i class="bi bi-train-front"></i>
+                </h5>
+                <!-- Table with stripped rows -->
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">NO</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Teachers</th>
+                      
+                      <th scope="col">Start Date</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                     
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-grid gap-2">
+                  <a href="{% url 'all_schoolpage' %}" class="btn btn-success"
+                    >View All Schools</a
+                  >
+                </div>
+                <!-- End Table with stripped rows -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Schools&nbsp;|&nbsp;RATHEE DAUNG&nbsp;
+                  <i class="bi bi-train-front"></i>
+                </h5>
+                <!-- Table with stripped rows -->
+                <table class="table table-striped">
+                  <thead>
+                   <tr>
+                      <th scope="col">NO</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Teachers</th>
+                      
+                      <th scope="col">Start Date</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      
+                      <td>22</td>
+                     
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                     
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-grid gap-2">
+                  <a href="{% url 'all_schoolpage' %}" class="btn btn-success">
+                    View All Schools
+                  </a>
+                </div>
+                <!-- End Table with stripped rows -->
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Schools&nbsp;|&nbsp;MIN BRAR&nbsp;
+                  <i class="bi bi-train-front"></i>
+                </h5>
+                <!-- Table with stripped rows -->
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">NO</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Teachers</th>
+                      
+                      <th scope="col">Start Date</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      
+                      <td>22</td>
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td><a href="{% url 'school_personal_page' %}">BHES</a></td>
+                      
+                      <td>22</td>
+                      
+                     
+                      <td>2016-05-25</td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-grid gap-2">
+                  <a href="{% url 'all_schoolpage' %}" class="btn btn-success">
+                    View All Schools
+                  </a>
+                </div>
+                <!-- End Table with stripped rows -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+{% endblock content %}

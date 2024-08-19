@@ -1,0 +1,440 @@
+{% extends "main.html" %}
+{% load static %}
+{% block title %}
+/Teachers
+{% endblock title %}
+{% block content %}
+<main id="main" class="main">
+      <div class="pagetitle">
+        <h1>
+          lIST OF TEACHERS &nbsp;
+          <i class="bi bi-person-standing"> </i>
+          <i class="bi bi-person-standing"> </i>
+          <i class="bi bi-person-standing"></i>
+        </h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="{% url "indexpage" %}">Home</a>
+            </li>
+            <li class="breadcrumb-item">Pages</li>
+            <li class="breadcrumb-item active">Teachers</li>
+          </ol>
+          <a href="{% url 'add_teacher_page' %}">
+            <button type="button" class="btn btn-secondary">Add Teachers
+            </button>
+          </a>
+        </nav>
+      </div>
+      <!-- End Page Title -->
+      <section class="section">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Teachers&nbsp;|&nbsp;SITTWAY&nbsp;
+                  <i class="bi bi-train-front"></i>
+                </h5>
+                <!-- Table with stripped rows -->
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">NO</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Position</th>
+                      <th scope="col">Age</th>
+                      <th scope="col">Image</th>
+                      <th scope="col">Action</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                        
+                      <td>Headmaster</td>
+                      <td>28</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>35</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>45</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>34</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+                      
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>47</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+                      
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-grid gap-2">
+                  <a href="{% url 'all_teacherpage'%}" class="btn btn-success"
+                    >View All Teachers</a
+                  >
+                </div>
+                <!-- End Table with stripped rows -->
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Teachers&nbsp;|&nbsp;MROUK OO&nbsp;
+                  <i class="bi bi-train-front"></i>
+                </h5>
+                <!-- Table with stripped rows -->
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">NO</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Position</th>
+                      <th scope="col">Age</th>
+                      <th scope="col">Image</th>
+                      <th scope="col">Action</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>28</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+                      
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>35</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+                      
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>45</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+                      
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>34</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+                      
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>47</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+                      
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-grid gap-2">
+                  <a href="{% url 'all_teacherpage'%}" class="btn btn-success"
+                    >View All Teachers</a
+                  >
+                </div>
+                <!-- End Table with stripped rows -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Teachers&nbsp;|&nbsp;RATHEE DAUNG&nbsp;
+                  <i class="bi bi-train-front"></i>
+                </h5>
+                <!-- Table with stripped rows -->
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">NO</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Position</th>
+                      <th scope="col">Age</th>
+                      <th scope="col">Image</th>
+                      <th scope="col">Action</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>28</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+                      
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>35</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+                      
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>45</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+                      
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>34</td>
+                      <td><img src="{% static "img/news-3.jpg" %}" alt="" style="width: 80px;"></td>
+
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>47</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+                      
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-grid gap-2">
+                  <a href="{% url 'all_teacherpage'%}" class="btn btn-success"
+                    >View All Teachers</a
+                  >
+                </div>
+                <!-- End Table with stripped rows -->
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Teachers&nbsp;|&nbsp;MIN BRAR&nbsp;
+                  <i class="bi bi-train-front"></i>
+                </h5>
+                <!-- Table with stripped rows -->
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">NO</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Position</th>
+                      <th scope="col">Age</th>
+                      <th scope="col">Image</th>
+                      <th scope="col">Action</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>28</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+                      
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>35</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+                      
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>45</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+                      
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>34</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+                      
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>
+                      <a href="{% url "teacher_personal_page" %}">Brandom</a>
+                      </td>
+                      <td>Headmaster</td>
+                      <td>47</td>
+                      <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
+                      
+                      <td>
+                        <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-trash btn btn-danger"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-grid gap-2">
+                  <a href="{% url 'all_teacherpage' %}" class="btn btn-success">
+                    View All Teachers
+                  </a>
+                </div>
+                <!-- End Table with stripped rows -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+{% endblock content %}

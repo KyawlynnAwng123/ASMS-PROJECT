@@ -1,0 +1,179 @@
+{% extends "main.html" %}
+{% block title %}/Add Student{% endblock title %}
+ {% load static %} 
+ {% block content %}
+<main id="main" class="main">
+		<!-- card start -->
+		<div class="container-fluid">
+			<div class="card mt-3">
+
+				<div class="card-body">
+
+					<div class="mb-2">
+						<h5 class="card-title text-center pb-0 fs-4">Student Form</h5>
+						<p class="text-center small">Enter your personal details to create account</p>
+					</div>
+
+					<form class="row g-3 needs-validation" novalidate>
+						<div class="col-4 mt-3 form-floating">
+							<input type="text" name="name" class="form-control" id="floatingInput"
+								placeholder="နာမေ" required>
+							<label for="floatingInput">Name</label>
+						</div>
+
+						<div class="col-4 mb-3 form-floating ">
+							<input type="number" name="name" class="form-control" id="floatingInput" placeholder="‌Age"
+								required />
+							<label for="floatingInput">Age</label>
+						</div>
+
+						<div class="col-4 mb-3 form-floating">
+							<input type="date" name="name" class="form-control" id="floatingInput" data-placeholder="DD-MM-YYYY"
+								required>
+								<label for="floatingInput"></label>
+						</div>
+
+						
+						<div class="col-4 mb-3 form-floating">
+							<input type="text" name="name" class="form-control" id="floatingInput" placeholder="မွီးရပ်ဇာတိ"
+								required>
+								<label for="floatingInput">Place of Birth</label>
+						</div>
+
+						<div class="col-4 mb-3 form-floating">
+							<input type="text" name="name" class="form-control" id="floatingInput" placeholder="မိဘအမည်"
+								required>
+								<label for="floatingInput">Parent Name</label>
+						</div>
+
+						<div class="col-4 mb-3 form-floating">
+							<input type="text" name="name" class="form-control" id="floatingInput" placeholder="အတန်း"
+								required>
+								<label for="floatingInput">Grade Name</label>
+						</div>
+
+						<div class="col-4 mb-3 form-floating">
+							<input type="text" name="name" class="form-control" id="floatingInput" placeholder=""
+								required>
+								<label for="floatingInput">Interest things</label>
+						</div>
+
+						<div class="col-4 mb-3 form-floating">
+							<input type="text" name="name" class="form-control" id="floatingInput" placeholder="ဘာသာရပ်"
+								required>
+								<label for="floatingInput">Language</label>
+						</div>
+
+						<div class="col-4 mb-3 form-floating">
+							<select class="form-select" id="validationCustom04" required>
+								<option selected disabled value="">Township...</option>
+								<option>...</option>
+							</select>
+							<div class="invalid-feedback">
+								Please select a valid state.
+							</div>
+						</div>
+
+						<div class="col-4 mb-3 form-floating">
+							<select class="form-select" id="validationCustom04" required>
+								<option selected disabled value="">Blood...</option>
+								<option>...</option>
+							</select>
+							<div class="invalid-feedback">
+								Please select a valid state.
+							</div>
+						</div>
+
+						<div class="col-4 mb-3 form-floating">
+							<select class="form-select" id="validationCustom04" required>
+								<option selected disabled value="">Nation...</option>
+								<option>...</option>
+							</select>
+							<div class="invalid-feedback">
+								Please select a valid state.
+							</div>
+						</div>
+
+						<div class="col-4 mb-3 form-floating">
+							<select class="form-select" id="validationCustom04" required>
+								<option selected disabled value="">Religion...</option>
+								<option>...</option>
+							</select>
+							<div class="invalid-feedback">
+								Please select a valid state.
+							</div>
+						</div>
+
+						<div class="col-4 mb-3 form-floating">
+							<input type="number" name="" class="form-control" id="floatingInput" placeholder="အရပ်"
+								required>
+								<label for="floatingInput">Height</label>
+						</div>
+
+						<div class="col-4 mb-3 form-floating">
+							<select class="form-select" id="validationCustom04" required>
+								<option selected disabled value="">Gender...</option>
+								<option>...</option>
+							</select>
+							<div class="invalid-feedback">
+								Please select a valid state.
+							</div>
+						</div>
+
+
+						<div class="col-4 mb-3 form-floating">
+							<select class="form-select" id="validationCustom04" required>
+								<option selected disabled value="">Marry...</option>
+								<option>...</option>
+							</select>
+							<div class="invalid-feedback">
+								Please select a valid state.
+							</div>
+						</div>
+
+
+						<div class="col-4 mb-3 form-floating">
+							<input type="text" name="" class="form-control" id="floatingInput" placeholder="နီရပ်လိပ်စာ"
+								required>
+								<label for="floatingInput">Address</label>
+						</div>
+
+						<div class="col-4 form-floating">
+								<input class="form-control" type="file" id="floatingInput">
+						</div>
+
+						<div class="col-4 mb-3 form-floating">
+							<input type="email" name="" class="form-control" id="email" placeholder="ဆက်သွယ်ရန်လိပ်စာ"
+								required>
+								<label for="floatingInput">Contact Address</label>
+						</div>
+
+						<div class="col-12 mt-3 form-floating">
+							<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px;"></textarea>
+							<label for="floatingTextarea">Messages</label>
+						</div>
+		
+
+						<div class="col-12 mt-3 form-floating">
+							<div class="form-check">
+								<input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms"
+									required>
+								<label class="form-check-label" for="acceptTerms">I agree and accept the <a
+										href="#">terms and conditions</a></label>
+								<div class="invalid-feedback">You must agree before submitting.</div>
+							</div>
+							<div class="d-grid gap-2 d-md-block mt-3">
+								<button class="btn btn-primary" type="submit">Submit</button>
+								<button class="btn btn-danger" type="submit">Cancel</button>
+							  </div>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- end card -->
+	</main>
+
+{% endblock content %}
+<!-- End NOmain -->

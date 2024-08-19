@@ -1,0 +1,177 @@
+{% extends "main.html" %}
+{% block title %}/Add Teacher{% endblock title %}
+
+{% block content %}
+
+<main id="main" class="main">
+		<!-- card start -->
+		<div class="container-fluid">
+			<div class="card mt-3">
+				<div class="card-body">
+					<div class="mb-2">
+						<h5 class="card-title text-center pb-0 fs-4">Teacher Form</h5>
+						<p class="text-center small">
+							Enter your teacher form to create account
+						</p>
+					</div>
+
+					<form class="row mt-3 g-3 needs-validation" novalidate>
+						<div class="col-4 mb-3 form-floating ">
+							<input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+							<label for="floatingInput">Name</label>
+						</div>
+
+						<div class="col-4 mb-3 form-floating ">
+							<input type="number" name="name" class="form-control" id="floatingInput" placeholder="‌Age"
+								required />
+							<label for="floatingInput">Age</label>
+						</div>
+
+						<div class="col-4 mb-3 form-floating ">
+							<input type="date" name="" class="form-control" id="floatingInput" placeholder="Birthday"
+								required />
+							<label for="floatingInput"></label>
+						</div>
+
+						<div class="col-4 mb-3 form-floating ">
+							<input type="text" name="name" class="form-control" id="floatingInput"
+								placeholder="Parents Name" required />
+							<label for="floatingInput">Parents Name</label>
+						</div>
+
+						<div class="col-4 mb-3 form-floating ">
+							<input type="text" name="name" class="form-control" id="floatingInput"
+								placeholder="Learn To Grade" required />
+							<label for="floatingInput">Learn To Grade</label>
+						</div>
+
+						<div class="col-4 mb-3 form-floating ">
+							<input type="text" name="name" class="form-control" id="floatingInput"
+								placeholder="Language" required />
+							<label for="floatingInput">Language</label>
+						</div>
+
+						<div class="col-4 mb-3 form-floating ">
+							<select class="form-select" id="validationCustom04" required>
+								<option selected disabled value="">Township...</option>
+								<option>...</option>
+							</select>
+							<div class="invalid-feedback">Please select a valid state.</div>
+						</div>
+
+						<div class="col-4 mb-3 form-floating">
+							<select class="form-select" id="floatingInput" required>
+								<option selected disabled value="" id="floatingInput">Blood...</option>
+								<option>...</option>
+							</select>
+							<div class="invalid-feedback">Please select a valid state.</div>
+						</div>
+
+						<div class="col-4 mb-3 form-floating">
+							<select class="form-select" id="validationCustom04" required>
+								<option selected disabled value="">Nation...</option>
+								<option>...</option>
+							</select>
+							<div class="invalid-feedback">Please select a valid state.</div>
+						</div>
+
+						<div class="col-4 mb-3 form-floating">
+							<select class="form-select" id="validationCustom04" required>
+								<option selected disabled value="">Religion...</option>
+								<option>...</option>
+							</select>
+							<div class="invalid-feedback">Please select a valid state.</div>
+						</div>
+
+						<div class="col-4 mb-3 form-floating">
+							<input type="text" name="" class="form-control" id="yourName" placeholder="Position"
+								required />
+							<label for="floatingInput">Position</label>
+						</div>
+						
+						<div class="col-4 form-floating">
+							<div class="form-floating">
+								<select class="form-select" id="floatingSelectGrid">
+									<option value="1">Male</option>
+									<option value="2">Female</option>
+								</select>
+								<label for="floatingSelectGrid">Gender</label>
+							</div>
+						</div>
+
+						<div class="col-4 form-floating">
+							<div class="form-floating">
+								<select class="form-select" id="floatingSelectGrid">
+									<option value="1">Married</option>
+									<option value="2">Widow</option>
+									<option value="2">Divorced</option>
+									<option value="2">Single</option>
+								</select>
+								<label for="floatingSelectGrid">Marry</label>
+							</div>
+						</div>
+
+						<div class="col-4 mb-3 form-floating">
+							<input type="text" name="" class="form-control" id="floatingInput" placeholder="address"
+								required />
+							<label for="floatingInput">Address</label>
+						</div>
+
+						<div class="col-4 mt-3 form-floating">
+							<input type="email" name="" class="form-control" id="floatingInput" placeholder="Address..."
+								required />
+							<label for="floatingInput">Contact Address</label>
+						</div>
+
+						<div class="col-4 form-floating">
+							<div class="form-floating">
+								<select class="form-select" id="floatingSelectGrid">
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+								<label for="floatingSelectGrid">School</label>
+							</div>
+						</div>
+
+						<div class="col-4 form-floating">
+							<input type="number" class="form-control" name="" id="floatingInput">
+							<label for="floatingInput">Phone No...</label>
+						</div>
+
+						<div class="col-4 form-floating">
+							<input type="file" class="form-control" id="floatingInput">
+						</div>
+
+				<div class="col-12 mt-4 form-floating">
+					<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px;"></textarea>
+					<label for="floatingTextarea">Messages</label>
+				</div>
+
+				<div class="col-12 form-floating">
+					<div class="form-check">
+						<input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms"
+							required />
+						<label class="form-check-label" for="acceptTerms">I agree and accept the
+							<a href="#">terms and conditions</a></label>
+						<div class="invalid-feedback">
+							You must agree before submitting.
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary mt-3">
+						Submit
+					</button>
+					<button type="submit" class="btn btn-danger mt-3">Reset</button>
+				</div>
+				<!-- <div class="col-12">
+					<p class="small mb-0">
+						Already have an account? <a href="pages-login.html">Log in</a>
+					</p>
+				</div> -->
+				</form>
+			</div>
+		</div>
+		</div>
+		<!-- end card -->
+	</main>
+{% endblock content %}
