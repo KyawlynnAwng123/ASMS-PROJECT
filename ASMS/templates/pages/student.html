@@ -7,7 +7,7 @@
 <main id="main" class="main">
       <div class="pagetitle">
         <h1>
-          lIST OF STUDENTS &nbsp;
+          ကျောင်းသား၊ကျောင်းသူများ စာရင်း &nbsp;
           <i class="bi bi-person"></i>
           <i class="bi bi-person"></i>
           <i class="bi bi-person"></i>
@@ -21,7 +21,7 @@
             <li class="breadcrumb-item active">Students</li>
           </ol>
           <a href="{% url "add_student_page" %}">
-            <button type="button" class="btn btn-secondary">Add Student</button>
+            <button type="button" class="btn btn-secondary">ကျောင်းသားအသစ် ပေါင်းထည့်ပါ။</button>
           </a>
         </nav>
       </div>
@@ -39,13 +39,13 @@
                 <table class="table table-striped">
                   <thead>
                     <tr>
-                      <th scope="col">NO</th>
-                      <th scope="col">Name</th>
-                      <th scope="col">Grade</th>
-                      <th scope="col">School</th>
-                      <th scope="col">Age</th>
-                      <th scope="col">Image</th>
-                      <th scope="col">Action</th>
+                      <th scope="col">စဥ်</th>
+                      <th scope="col">နာမည်</th>
+                      <th scope="col">အတန်း</th>
+                      <th scope="col">ကျောင်း</th>
+                      <th scope="col">အသက်</th>
+                      <th scope="col">ဓါတ်ပုံ</th>
+                      <th scope="col">အပြင်အဆင်များ</th>
                     </tr>
 
                   </thead>
@@ -55,12 +55,13 @@
                       <td>
                         <a href="{% url "student_personal_page" %}">Theodore Duran</a>
                       </td>
-                      <td>Grade-12</td>
+                      <td>ဆယ်တန်း</td>
                       <td>BHES</td>
-                      <td>28</td>
+                      <td>၁၇</td>
                       <td><img src="{% static "img/card.jpg" %}" alt="" style="width: 80px;"></td>
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
 
@@ -78,6 +79,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -94,6 +96,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -110,6 +113,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -126,6 +130,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -133,7 +138,7 @@
                 </table>
                 <div class="d-grid gap-2">
                   <a href="{% url 'all_studentpage' %}" class="btn btn-success"
-                    >View All Students</a>
+                    >ကျောင်းသားအားလုံးကြည့်ရန်</a>
                 </div>
                 <!-- End Table with stripped rows -->
               </div>
@@ -148,22 +153,22 @@
                 <table class="table table-striped">
                   <thead>
                     <tr>
-                      <th scope="col">NO</th>
-                      <th scope="col">Name</th>
-                      <th scope="col">Grade</th>
-                      <th scope="col">School</th>
-                      <th scope="col">Age</th>
-                      <th scope="col">Image</th>
-                      <th scope="col">Action</th>
+                      <th scope="col">စဥ်</th>
+                      <th scope="col">နာမည်</th>
+                      <th scope="col">အတန်း</th>
+                      <th scope="col">ကျောင်း</th>
+                      <th scope="col">အသက်</th>
+                      <th scope="col">ဓါတ်ပုံ</th>
+                      <th scope="col">အပြင်အဆင်များ</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <th scope="row">1</th>
                       <td>
-                        <a href="{% url "student_personal_page" %}">Theodore Duran</a>
+                        <a href="{% url "student_personal_page" %}">ဖြူလှ</a>
                       </td>
-                      <td>Grade-12</td>
+                      <td>ဆယ်တန်း</td>
                       <td>BHES</td>
 
                       <td>28</td>
@@ -171,6 +176,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -187,6 +193,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -203,6 +210,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -219,6 +227,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -235,6 +244,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -242,7 +252,7 @@
                 </table>
                 <div class="d-grid gap-2">
                   <a href="{% url 'all_studentpage' %}" class="btn btn-success"
-                    >View All Students</a>
+                    >ကျောင်းသားအားလုံးကြည့်ရန်</a>
                 </div>
                 <!-- End Table with stripped rows -->
               </div>
@@ -259,13 +269,13 @@
                 <table class="table table-striped">
                   <thead>
                     <tr>
-                      <th scope="col">NO</th>
-                      <th scope="col">Name</th>
-                      <th scope="col">Grade</th>
-                      <th scope="col">School</th>
-                      <th scope="col">Age</th>
-                      <th scope="col">Image</th>
-                      <th scope="col">Action</th>
+                      <th scope="col">စဥ်</th>
+                      <th scope="col">နာမည်</th>
+                      <th scope="col">အတန်း</th>
+                      <th scope="col">ကျောင်း</th>
+                      <th scope="col">အသက်</th>
+                      <th scope="col">ဓါတ်ပုံ</th>
+                      <th scope="col">အပြင်အဆင်များ</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -282,6 +292,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -297,6 +308,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -313,6 +325,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -329,6 +342,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -345,6 +359,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -352,7 +367,7 @@
                 </table>
                 <div class="d-grid gap-2">
                   <a href="{% url 'all_studentpage' %}" class="btn btn-success"
-                    >View All Students</a>
+                    >ကျောင်းသားအားလုံးကြည့်ရန်</a>
                 </div>
                 <!-- End Table with stripped rows -->
               </div>
@@ -367,13 +382,13 @@
                 <table class="table table-striped">
                   <thead>
                     <tr>
-                      <th scope="col">NO</th>
-                      <th scope="col">Name</th>
-                      <th scope="col">Grade</th>
-                      <th scope="col">School</th>
-                      <th scope="col">Age</th>
-                      <th scope="col">Image</th>
-                      <th scope="col">Action</th>
+                      <th scope="col">စဥ်</th>
+                      <th scope="col">နာမည်</th>
+                      <th scope="col">အတန်း</th>
+                      <th scope="col">ကျောင်း</th>
+                      <th scope="col">အသက်</th>
+                      <th scope="col">ဓါတ်ပုံ</th>
+                      <th scope="col">အပြင်အဆင်များ</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -390,6 +405,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -406,6 +422,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -422,6 +439,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -438,6 +456,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -454,6 +473,7 @@
                       
                       <td>
                         <i class="bx bxs-calendar-edit btn btn-success"></i>
+                        <i class="bx bx-bullseye btn btn-primary"></i>
                         <i class="bx bx-trash btn btn-danger"></i>
                       </td>
                     </tr>
@@ -461,7 +481,7 @@
                 </table>
                 <div class="d-grid gap-2">
                   <a href="{% url 'all_studentpage' %}" class="btn btn-success"
-                    >View All Students</a>
+                    >ကျောင်းသားအားလုံးကြည့်ရန်</a>
                 </div>
                 <!-- End Table with stripped rows -->
               </div>

@@ -8,7 +8,7 @@
 {% block content %}
 <main id="main" class="main">
     <div class="pagetitle">
-      <h1>Profile</h1>
+      <h1>ကျောင်းသား၊ကျောင်းသူ ကိုယ်ရီးအချက်အလက်</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="{% url "indexpage" %}">Home</a></li>
@@ -26,7 +26,7 @@
             <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
 
               <img src="{% static 'img/profile-img.jpg' %}" alt="Profile" class="rounded-circle">
-              <h2>Kyaw Lynn Awng</h2>
+              <h2>ကျော်လင်းအောင်</h2>
               <h3>Grade 12</h3>
               <div class="social-links mt-2">
                 <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -60,88 +60,86 @@
               <div class="tab-content pt-2">
 
                 <div class="tab-pane fade show active profile-overview" id="profile-overview">
-                  <h5 class="card-title">About</h5>
-                  <p class="small fst-italic">Sunt est soluta temporibus accusantium neque nam maiores cumque temporibus. Tempora libero non est unde veniam est qui dolor. Ut sunt iure rerum quae quisquam autem eveniet perspiciatis odit. Fuga sequi sed ea saepe at unde.</p>
 
-                  <h5 class="card-title">Profile Details</h5>
+                  <h5 class="card-title">ကိုယ်ရီး အကျဥ်း</h5>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label ">Name</div>
-                    <div class="col-lg-9 col-md-8">Kevin Anderson</div>
+                    <div class="col-lg-3 col-md-4 label ">နာမည်</div>
+                    <div class="col-lg-9 col-md-8">ကျော်လင်းအောင်</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Age</div>
+                    <div class="col-lg-3 col-md-4 label">အသက်</div>
                     <div class="col-lg-9 col-md-8">17</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Date of Birth</div>
+                    <div class="col-lg-3 col-md-4 label">မွီးသက္ကရာဇ်</div>
                     <div class="col-lg-9 col-md-8">2006/12/12</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Place of Birth</div>
-                    <div class="col-lg-9 col-md-8">USA</div>
+                    <div class="col-lg-3 col-md-4 label">မွီးဖွား‌ရေ နိန်ရာ</div>
+                    <div class="col-lg-9 col-md-8">ဖြူချောင်းကျေးရွာ၊ရသေ့တောင်မြို့နယ်</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Parent Name</div>
-                    <div class="col-lg-9 col-md-8">U Ba and Daw Hla</div>
+                    <div class="col-lg-3 col-md-4 label">မိဘ နာမည်</div>
+                    <div class="col-lg-9 col-md-8">ဦးထွန်းသိန်း၊ ဒေါ်မြတင်</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Grade Name</div>
-                    <div class="col-lg-9 col-md-8">12</div>
+                    <div class="col-lg-3 col-md-4 label">အတန်း</div>
+                    <div class="col-lg-9 col-md-8">ဆယ်တန်း</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Interesting things</div>
-                    <div class="col-lg-9 col-md-8">Painting, Football</div>
+                    <div class="col-lg-3 col-md-4 label">စိတ်ဝင်စားရေ အရာတိ</div>
+                    <div class="col-lg-9 col-md-8">ပန်းချီရီးဆွဲခြင်း, ဘောလုံးအားကစား</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Township</div>
-                    <div class="col-lg-9 col-md-8">Sittwe</div>
+                    <div class="col-lg-3 col-md-4 label">မြို့နယ်</div>
+                    <div class="col-lg-9 col-md-8">ရသေ့တောင်</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Nation</div>
-                    <div class="col-lg-9 col-md-8">Rakhine</div>
+                    <div class="col-lg-3 col-md-4 label">လူမျိုး</div>
+                    <div class="col-lg-9 col-md-8">ရခိုင်လူမျိုး</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Blood</div>
-                    <div class="col-lg-9 col-md-8">B</div>
+                    <div class="col-lg-3 col-md-4 label">သွီးအုပ်စု</div>
+                    <div class="col-lg-9 col-md-8">ဘီ သွီး</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Religion</div>
-                    <div class="col-lg-9 col-md-8">Buddhsim</div>
+                    <div class="col-lg-3 col-md-4 label">ကိုးကွယ်ရေ ဘာသာ</div>
+                    <div class="col-lg-9 col-md-8">ဗုဒ္ဓ ဘာသာ</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Gander</div>
-                    <div class="col-lg-9 col-md-8">Male</div>
+                    <div class="col-lg-3 col-md-4 label">လိင်</div>
+                    <div class="col-lg-9 col-md-8">ကျား</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Address</div>
-                    <div class="col-lg-9 col-md-8">A108 Adam Street, New York, NY 535022</div>
+                    <div class="col-lg-3 col-md-4 label">လိပ်စာ</div>
+                    <div class="col-lg-9 col-md-8">ဖြူချောင်းကျေးရွာ၊ ရသေ့တောင်မြို့နယ်</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Married or not</div>
-                    <div class="col-lg-9 col-md-8">not </div>
+                    <div class="col-lg-3 col-md-4 label">အိမ်ထောင် ဟိ/မဟိ</div>
+                    <div class="col-lg-9 col-md-8">မဟိ </div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Contact</div>
+                    <div class="col-lg-3 col-md-4 label">ဆက်သွယ်ရန် လိပ်စာ</div>
                     <div class="col-lg-9 col-md-8">(436) 486-3538 x29071</div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Email</div>
+                    <div class="col-lg-3 col-md-4 label">အီးမေးလ်</div>
                     <div class="col-lg-9 col-md-8">kyaw@gmail.com</div>
                   </div>
 
